@@ -519,7 +519,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-**RQ1a)** How is teachers’ technological-pedagogical content knowledge (TPACK) conceptualized within research? What different components are defined and where does the focus lie?  
+**RQ1a)** How is teachers’ technological-pedagogical content knowledge (TPACK) conceptualized within research? What different components are defined and on which component does the focus lie (T, P, C, TP, TC, TP, PC, TPC?)  
 
 **RQ1b)** In particular, how much emphasisze is given on content-related features in data-driven studies as well as in theoretical contributions to the TPACK corpus that use the TPACK model as their guiding framework?
 
