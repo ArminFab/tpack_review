@@ -1,9 +1,9 @@
 ---
-title: "A Template for Systematic Reviews and Metaanalyses"
+title: "Conceptualizations of the TPCK-Framework"
 author:
 - affiliation: University of Tübingen
-  email: juergen.schneider@uni-tuebingen.de
-  name: Jürgen Schneider
+  email: armin.fabian@uni-tuebingen.de
+  name: Armin Fabian
   url: https://uni-tuebingen.de/de/175743
 - affiliation: University of Tübingen
   email: iris.backfisch@uni-tuebingen
@@ -106,7 +106,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-Das ist der subber Titel.
+Bringing Light Into the Dark: A Systematic Review on the Diverse Conceptualizations of the TPCK Framework
 
 
 ## Type of Review
@@ -175,7 +175,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+We use this form as registration
 
 
 ## Anticipated start and completion date
@@ -205,7 +205,9 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-This is a test
+**Start**: July 2020 
+
+**Anticipated Complection Date**: January 2021
 
 
 
@@ -259,7 +261,16 @@ knitr::kable(table_sources, escape = F) %>%
 
 </div> 
 
-_Put your text here._
+The review has not yet started [yes/no]: no
+
+| Review stage | Started | Completed |
+|:--------------------------------------------| :----:| :----:|
+| Preliminary searches | Yes | No
+| Piloting of the study selection process | No | No
+| Formal screening of search results against eligibility criteria | No | No
+| Data extraction | No | No
+| Risk of bias (quality) assessment | No | No
+| Data analysis | No | No
 
 
 ## Names, Affiliations, Contact
@@ -323,7 +334,13 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+* Named contact: Armin Fabian
+* Named contact email: armin.fabian@uni-tuebingen.de
+* Named contact ORCID: [0000-0002-5839-7827](https://orcid.org/0000-0002-5839-7827)
+* Organisational affiliation of the review: University of Tübingen, Germany
+* Review team members and their organisational affiliations:
+  - Jürgen Schneider, juergen.schneider@uni-tuebingen.de, ORCID [0000-0002-3772-4198](https://orcid.org/0000-0002-3772-4198)
+  - Andreas Lachner, andreas.lachner@uni-tuebingen.de
 
 
 ## Amendments to previous versions
