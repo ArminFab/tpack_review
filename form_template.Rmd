@@ -175,7 +175,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-We use this form as registration
+This form is used as registration
 
 
 ## Anticipated start and completion date
@@ -205,9 +205,9 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-**Start**: July 2020 
+**Start**: September 2020 
 
-**Anticipated Complection Date**: January 2021
+**Anticipated Complection Date**: Februrary 2021
 
 
 
@@ -336,11 +336,10 @@ knitr::kable(table_sources) %>%
 
 * Named contact: Armin Fabian
 * Named contact email: armin.fabian@uni-tuebingen.de
-* Named contact ORCID: [0000-0002-5839-7827](https://orcid.org/0000-0002-5839-7827)
+* Named contact ORCID: [0000-0001-6493-2147](https://orcid.org/0000-0001-6493-2147)
 * Organisational affiliation of the review: University of Tübingen, Germany
 * Review team members and their organisational affiliations:
-  - Jürgen Schneider, juergen.schneider@uni-tuebingen.de, ORCID [0000-0002-3772-4198](https://orcid.org/0000-0002-3772-4198)
-  - Andreas Lachner, andreas.lachner@uni-tuebingen.de
+  - Iris Backfisch, i.backfisch@iwm-tuebingen.de ORCID [0000-0002-1363-9888](https://orcid.org/0000-0002-1363-9888)
 
 
 ## Amendments to previous versions
@@ -370,7 +369,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+Amendments will be published as new version of the document under the same DOI (or will point to previous version).
 
 
 ## Funding sources, sponsors and their roles
@@ -405,7 +404,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+No external funding.
 
 
 ## Conflict of Interest
@@ -435,7 +434,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+No conflict of interest.
 
 
 # Introduction
@@ -477,7 +476,17 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+When it comes to school or education as such, the discussion about the use of digital media has become ubiquitous. However, recent studies indicate that teachers still rarely use digital technologies for educational purposes, and if they do, they rarely integrate them into teaching in a didactically meaningful manner (Farjon, Smits & Voogt, 2019). For years, protagonists of the school system as well as researchers in the field have tried to identify possible boundary conditions that hinder or foster teachers in their intentions to use digital technologies  in classrooms (Farjon, Smits, & Voogt, 2019; Knezek & Christensen, 2016; Petko, 2012). It is commonly assumed that one such boundary condition is the professional knowledge of teachers (Kunter et al., 2013; Baumert et al., 2010; Shulman, 1987). Accordingly, to use technologies in classrooms purposefully, teachers need specific knowledge that is tailored around the use of digital technologies. To better understand such technology-related teaching knowledge, researchers around the globe have established a variety of diverse conceptual models. One of the most recited and adopted models, that has guided researchers throughout the last decade in conceptualizing teachers’ professional knowledge, is the TPACK (**t**echnological, **p**edagogical and **c**ontent **k**nowledge) model by Mishra and Koehler (2006). The TPACK model captures the idea of bringing together and connecting basic knowledge components (i. e. knowledge about technology, pedagogy and content) to form a new central form of knowledge – TPCK. In literature, TPCK has evolved to become the central focus of researchers when it comes to technology integration (Kim & Lee, 2018).  Even though, the TPACK model’s underlying structure remains open for discussion (Cox & Graham, 2009; Willermark, 2018), there is increasing consensus among researchers that TPCK is the form of knowledge which constitutes *the* essential prerequisite for teachers who intent to enhance their teaching with the help of digital technologies. 
+
+Ever since the introduction of the TPACK model in 2006, numerous researchers have worked *on* the model trying to clarify its underlying structure (Angeli & Valanides, 2009; Graham, 2011); or *with* the model using it as theoretical background for data driven studies (Angeli et al., 2016; Cavanagh & Koehler, 2013;). The question of what TPCK constitutes is of particular interest and has thus driven many researchers in their endeavours to make sense of this complex and multifaceted model (see e. g. Niess, Gollow-Wiles, & Angeli, 2019 for an overview). Yet, to date the question of what TPCK is remains a source of scholarly debate (Voogt et al., 2013). Most fruitful contributions to this debate stem from systematic reviews as they help to guide researchers through the seemingly obscure jungle of TPACK literature. Whereas most review authors have tried to collect, connect and link existing TPCK conceptualisations through existing papers (e.g. Voogt et al., 2013), others have focused on categorizing measurement instruments that had been put to practice in date-driven studies in the past (Abbitt, 2011; Koehler, Shin & Mishra, 2012). 
+
+However, in examining existing reviews as well as recent TPACK papers, two (closely linked) fundamental desiderates become apparent. First, reviews so far focused on either tackling the dichotomous debate that surrounds TPACK (i. e. *transformative* vs. *integrative* view, see Angeli et al., 2016) or on categorizing TPACK measurement instruments (in categories such as performance based and self-assessment based, see De Rossi & Trevisan, 2018). To provide a comprehensive picture on TPCK, however, there is an urgent need to understand the different conceptualizations that researchers introduced when working on or with the TPACK model. Thus, to deliver interesting new insights to the vast and growing TPACK community, a systematic review that focuses on the diversity of possible conceptualizations of the TPACK model is essential. Second, researchers throughout the young TPACK history have pointed out that there is a general lack of focussing on subject-specific applications of the TPACK framework (e. g. Kramarski & Michalsky, 2010; Voogt et. al, 2013), which –in a way – contradicts the inherently content-specific feature of the TPACK model (as manifested through the “c” in TPCK). Instead, most TPCK researchers have seemed to use different focus lenses, such as technological or pedagogical ones, when applying the TPACK model as their guiding framework in their studies (De Rossi & Trevisan, 2018). 
+
+
+Against this background, we conduct a systematic review that attempts to clarify and systematize existing conceptualizations within the huge corpus of TPACK research, with particular interest towards different foci lenses (i. e. subdomains of TPCK: TK, CK, PK, PCK, TCK, TPK and TPCK) that have been applied by researchers. As demanded for by several researchers, a special focus will hereby rely on how and to what extent content-specific features of TPACK were accounted for in the TPACK literature. To do so, we will also systematically look at existing methods to measure TPACK to map those against the diverse conceptualizations of TPACK. 
+
+This systematic review will help to organize different approaches that researchers have taken and will take to understand and apply the highly complex framework of TPACK. 
+
 
 
 ## Research Questions
@@ -510,7 +519,12 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+**RQ1a)** How is teachers’ technological-pedagogical content knowledge (TPACK) conceptualized within research? What different components are defined and where does the focus lie?  
+
+**RQ1b)** In particular, how much emphasisze is given on content-related features in data-driven studies as well as in theoretical contributions to the TPACK corpus that use the TPACK model as their guiding framework?
+
+**RQ2)** How do the several existing TPACK measurement instruments mirror the distinct conceptualizations of TPACK? 
+
 
 
 # Methods
