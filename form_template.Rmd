@@ -339,7 +339,8 @@ knitr::kable(table_sources) %>%
 * Named contact ORCID: [0000-0001-6493-2147](https://orcid.org/0000-0001-6493-2147)
 * Organisational affiliation of the review: University of Tübingen, Germany
 * Review team members and their organisational affiliations:
-  - Iris Backfisch, i.backfisch@iwm-tuebingen.de ORCID [0000-0002-1363-9888](https://orcid.org/0000-0002-1363-9888)
+  - Iris Backfisch, i.backfisch@iwm-tuebingen.de, ORCID [0000-0002-1363-9888](https://orcid.org/0000-0002-1363-9888)
+  - Andreas Lachner, andreas.lachner@uni-tuebingen.de
 
 
 ## Amendments to previous versions
