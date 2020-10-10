@@ -211,7 +211,7 @@ knitr::kable(table_sources) %>%
 
 **Start**: October 2020 
 
-**Anticipated Complection Date**: March 2021
+**Anticipated Completion Date**: March 2021
 
 
 
