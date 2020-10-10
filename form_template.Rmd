@@ -310,7 +310,11 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+**Corresponding author**
+Armin Fabian
+University of Tübingen
+https://uni-tuebingen.de/einrichtungen/zentrale-einrichtungen/tuebingen-school-of-education-tuese/personen/mitarbeiterinnen-und-mitarbeiter-qualitaetsoffensive-lehrerbildung-digitalisierung/armin-fabian/
+Brunnenstraße 20, 72074 Tübingen
 
 ## Collaborators
 
@@ -343,8 +347,8 @@ knitr::kable(table_sources) %>%
 * Named contact ORCID: [0000-0001-6493-2147](https://orcid.org/0000-0001-6493-2147)
 * Organisational affiliation of the review: University of Tübingen, Germany
 * Review team members and their organisational affiliations:
-  - Iris Backfisch, i.backfisch@iwm-tuebingen.de, ORCID [0000-0002-1363-9888](https://orcid.org/0000-0002-1363-9888)
-  - Andreas Lachner, andreas.lachner@uni-tuebingen.de, ORCID [0000-0001-5866-7164] (https://orcid.org/0000-0001-5866-7164)
+  - Iris Backfisch, i.backfisch@iwm-tuebingen.de,  ORCID [0000-0002-1363-9888](https://orcid.org/0000-0002-1363-9888)
+  - Andreas Lachner, andreas.lachner@uni-tuebingen.de, ORCID [0000-0001-5866-7164](https://orcid.org/0000-0001-5866-7164)
 
 
 ## Amendments to previous versions
@@ -482,54 +486,34 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-When it comes to school or education as such, the discussion about the use of digital media has become ubiquitous. However, recent studies indicate that teachers still rarely use digital technologies for educational purposes, and if they do, they rarely integrate them into teaching in a didactically meaningful manner (Farjon, Smits & Voogt, 2019). For years, protagonists of the school system as well as researchers in the field have tried to identify possible boundary conditions that hinder or foster teachers in their intentions to use digital technologies  in classrooms (Farjon, Smits, & Voogt, 2019; Knezek & Christensen, 2016; Petko, 2012). It is commonly assumed that one such boundary condition is the professional knowledge of teachers (Kunter et al., 2013; Baumert et al., 2010; Shulman, 1987). Accordingly, to use technologies in classrooms purposefully, teachers need specific knowledge that is tailored around the use of digital technologies. To better understand such technology-related teaching knowledge, researchers around the globe have established a variety of diverse conceptual models. One of the most recited and adopted models, that has guided researchers throughout the last decade in conceptualizing teachers’ professional knowledge, is the TPACK (**t**echnological, **p**edagogical and **c**ontent **k**nowledge) model by Mishra and Koehler (2006). The TPACK model captures the idea of bringing together and connecting basic knowledge components (i. e. knowledge about technology, pedagogy and content) to form a new central form of knowledge – TPCK. In literature, TPCK has evolved to become the central focus of researchers when it comes to technology integration (Kim & Lee, 2018).  Even though, the TPACK model’s underlying structure remains open for discussion (Cox & Graham, 2009; Willermark, 2018), there is increasing consensus among researchers that TPCK is the form of knowledge which constitutes *the* essential prerequisite for teachers who intent to enhance their teaching with the help of digital technologies. 
+When it comes to school or education as such, the discussion about the use of digital media has become ubiquitous. However, recent studies indicate that teachers still rarely use digital technologies for educational purposes, and if they do, they rarely integrate them into teaching in a didactically meaningful manner (Farjon, Smits & Voogt, 2019). One of the main boundary conditions of successful technology integration, that researchers have identified, is the professional knowledge of teachers. Accordingly, to use technologies in classrooms purposefully, teachers need specific knowledge that is tailored around the use of digital technologies. One of the most recited and adopted models used to describe such knowledge is the TPACK (**t**echnological, **p**edagogical **a**nd **c**ontent **k**nowledge) model by Mishra and Koehler (2006). The TPACK model captures the idea of bringing together and connecting basic knowledge components (i.e.  knowledge about technology, pedagogy and content) to form a new central form of knowledge – TPCK (technological, pedagogical and content knowledge. In literature, TPCK has evolved to become *the* central focus of researchers when it comes to knowledge regarding technology integration (Kim & Lee, 2018).
 
-Ever since the introduction of the TPACK model in 2006, numerous researchers have worked *on* the model trying to clarify its underlying structure (Angeli & Valanides, 2009; Graham, 2011); or *with* the model using it as theoretical background for data driven studies (Angeli et al., 2016; Cavanagh & Koehler, 2013;). The question of what TPCK constitutes is of particular interest and has thus driven many researchers in their endeavours to make sense of this complex and multifaceted model (see e. g. Niess, Gollow-Wiles, & Angeli, 2019 for an overview). Yet, to date the question of what TPCK is remains a source of scholarly debate (Voogt et al., 2013). Most fruitful contributions to this debate stem from systematic reviews as they help to guide researchers through the seemingly obscure jungle of TPACK literature. Whereas most review authors have tried to collect, connect and link existing TPCK conceptualisations through existing papers (e.g. Voogt et al., 2013), others have focused on categorizing measurement instruments that had been put to practice in date-driven studies in the past (Abbitt, 2011; Koehler, Shin & Mishra, 2012). 
+Ever since the introduction of the TPACK model in 2006, numerous researchers have worked *on* the model trying to clarify its underlying structure (Angeli & Valanides, 2009; Graham, 2011); or *with* the model using it as theoretical background for data driven studies (Angeli et al., 2016; Cavanagh & Koehler, 2013;). Yet, to date the question of what TPCK constitutes remains a source of scholarly debate (Petko, 2020). In the authors’ opinion, this is mainly due to the vast, diverse and often seemingly contradictory conceptualisations of TPCK that exist in the TPACK literature. To provide a comprehensive picture on TPCK, it is therefore necessary to understand and organize the different conceptualizations that researchers introduced when working on or with the TPACK model.
 
-However, in examining existing reviews as well as recent TPACK papers, two (closely linked) fundamental desiderates become apparent. First, reviews so far focused on either tackling the dichotomous debate that surrounds TPACK (i. e. *transformative* vs. *integrative* view, see Angeli et al., 2016) or on categorizing TPACK measurement instruments (in categories such as performance based and self-assessment based, see De Rossi & Trevisan, 2018). To provide a comprehensive picture on TPCK, however, there is an urgent need to understand the different conceptualizations that researchers introduced when working on or with the TPACK model. Thus, to deliver interesting new insights to the vast and growing TPACK community, a systematic review that focuses on the diversity of possible conceptualizations of the TPACK model is essential. Second, researchers throughout the young TPACK history have pointed out that there is a general lack of focussing on subject-specific applications of the TPACK framework (e. g. Kramarski & Michalsky, 2010; Voogt et. al, 2013), which –in a way – contradicts the inherently content-specific feature of the TPACK model (as manifested through the “c” in TPCK). Instead, most TPCK researchers have seemed to use different focus lenses, such as technological or pedagogical ones, when applying the TPACK model as their guiding framework in their studies (De Rossi & Trevisan, 2018). 
+Against this background, we conduct a systematic review that attempts to clarify and systematize existing conceptualizations within the huge corpus of TPACK research. More precisely, we are interested in examining if TPACK researchers – in their endeavours of conceptualising TPCK – have put emphasis on specific TPCK components (i.e. subdomains of TPCK: TK, CK, PK, PCK, TCK, TPK and TPCK) while possibly neglecting others. In other words: Which foci lenses have been used by researchers when dealing with the TPACK model? As many researchers demand, a particular focus will here be on *how* and *to what extent* content-specific features of TPCK were accounted for in existing conceptualizations of the TPACK model.
 
+This systematic review will help to organize different approaches that researchers have taken and will take to understand and apply the highly complex framework of TPCK.
 
-Against this background, we conduct a systematic review that attempts to clarify and systematize existing conceptualizations within the huge corpus of TPACK research, with particular interest towards different foci lenses (i. e. subdomains of TPCK: TK, CK, PK, PCK, TCK, TPK and TPCK) that have been applied by researchers. As demanded for by several researchers, a special focus will hereby rely on how and to what extent content-specific features of TPACK were accounted for in the TPACK literature. To do so, we will also systematically look at existing methods to measure TPACK to map those against the diverse conceptualizations of TPACK. 
-
-This systematic review will help to organize different approaches that researchers have taken and will take to understand and apply the highly complex framework of TPACK.
 
 __References__
 
-Abbitt, Jason T. (2011): Measuring Technological PedagogicalContent Knowledge in Preservice Teacher Education. A        Review of Current Methods and Instruments. In: *Journal of   Research on Technology in Education* 43 (4), S. 281–300.    DOI: 10.1080/15391523.2011.10782573. 
+Angeli, C., & Valanides, N. (2009): Epistemological and methodological issues for the conceptualization, development, and assessment of
+ ICT-TPCK: Advances in technological pedagogical content knowledge (TPCK). *Computers & Education*, 52 (1), 154–168. doi: 10.1016/j.compedu.2008.07.006. 
 
-Angeli, C., & Valanides, N. (2009): Epistemological and methodological issues for the conceptualization, development, and assessment of ICT-TPCK: Advances in technological pedagogical content knowledge (TPCK). *Computers & Education* 52 (1), 154–168. DOI: 10.1016/j.compedu.2008.07.006. 
+Angeli, C.; Voogt, J.; Fluck, A.; Webb, M.; Cox, M.; Malyn-Smith, J.,& Zagani, J. (2016): A K-6 Computational Thinking Curriculum Framework: Implication for Teacher Knowledge. In: *Educational Technology & Society*, 19 (3), 47–57. 
 
-Angeli, C.; Voogt, J.; Fluck, A.; Webb, M.; Cox, M.; Malyn-Smith, J.,& Zagani, J. (2016): A K-6 Computational Thinking Curriculum Framework: Implication for Teacher Knowledge. In: *Educational Technology & Society* 19 (3), S. 47–57. 
+Cavanagh, Robert F.; Koehler, Matthew J. (2013): A Turn toward Specifying Validity Criteria in the Measurement of Technological Pedagogical Content Knowledge (TPACK). *Journal of Research on Technology in Education*, 46 (2), S. 129–148. doi: 10.1080/15391523.2013.10782616.
 
-Baumert, J., Kunter, M., Blum, W., Brunner, M., Voss, T., Jordan, A. & Tsai, Y.-M. (2010). Teachers' mathematical knowledge, cognitive activation in the classroom, and student progress. *American Educational Research Journal*, 47(1), 133 180.https://doi.org/10.3102/0002831209345157 
+Cox, S., & Graham, CR (2009). Diagramming TPACK in practice: Using an elaborated model of the TPACK framework to analyze and depict teacher knowledge. *TechTrends: Linking Research & Practice to Improve Learning*, 53 (5), 60-69. 
 
-Cox, S., & Graham, CR (2009). Diagramming TPACK in practice: Using an elaborated model of the TPACK framework to analyze and depict teacher knowledge. TechTrends: Linking Research & Practice to Improve Learning, 53 (5), 60-69. 
-
-De Rossi, M., & Trevisan, O. (2018). Technological pedagogical content knowledge in the literature: how TPCK is defined and implemented in initial teacher education. *Italian Journal of Educational Technology*, 26(1), 7-23. doi: 10.17471/2499-4324/988 
-
-Farjon, D., Smits, A., & Voogt, J. (2019). Technology integration of student teachers explained by attitudes and beliefs, competency, access, and experience. *Computers & Education*, 130, 81-93. https://doi.org/10.1016/j.compedu.2018.11.010 
+Farjon, D., Smits, A., & Voogt, J. (2019). Technology integration of student teachers explained by attitudes and beliefs, competency, access, and experience. *Computers & Education*, 130, 81-93. doi: 10.1016/j.compedu.2018.11.010 
 
 Kim, S.-W., & Lee, Y. J. (2018): The Effects of the TPACK-P Educational Program on Teachers’ TPACK: Programming as a Technological Tool. *International Journal of Engineering & Technology*, 30 (7), 636–643. 
 
-Knezek, G., Christensen, R. Extending the will, skill, tool model of technology integration: adding pedagogy as a new model construct. *Journal of Computing in Higher Education*, 28, 307–325 (2016). https://doi.org/10.1007/s12528-016-9120-2  
-
-Koehler, M. J., Shin, T. S., & Mishra, P. (2012): How Do We Measure TPACK? Let Me Count the Ways. In: Robert N. Ronau, Christopher R. Rakes und Margaret L. Niess (Hg.): Educational Technology, Teacher Knowledge, and Classroom Impact: IGI Global, S. 16–31. 
-
-Kramarski, B. & Michalsky, T. (2010): Preparing preservice teachers for self-regulated learning in the context of technological pedagogical content knowledge. *Learning and Instruction 20 (5)*, S. 434–447. DOI: 10.1016/j.learninstruc.2009.05.003. 
-
-Kunter, M., Klusmann, U., Baumert, J., Richter, D., Voss, T., & Hachfeld, A. (2013). Professional competence of teachers: Effects on instructional quality and student development. *Journal of Educational Psychology*, 105, 805–820. https://doi.org/10.1037/a0032583 
-
 Mishra, P., & Koehler, M. J. (2006). Technological pedagogical content knowledge: A framework for integrating technology in teacher knowledge. *Teachers College Record*, 108(6), 1017-1054. 
 
-Niess, Margaret; Gollow-Wiles, Henry; Angeli, Charoula (Hg.) (2019): Handbook of research on TPACK in the digital age. Hershey PA: Information Science Reference (Advances in education technologies and instructional design. 
+Petko, D. (2020). Quo vadis TPACK? Scouting the road ahead. *Proceedings of EdMedia + Innovate Learning* (pp. 1349-1358). Online, The Netherlands: Association for the Advancement of Computing in Education (AACE). Retrieved October 10, 2020 from https://www.learntechlib.org/primary/p/217445/. 
 
-Petko, D. (2012). Teachers’ pedagogical beliefs and their use of digital media in classrooms: Sharpening the focus of the “will, skill, tool” model and integrating teachers’ constructivist orientations. *Computers & Education*, 58, 1351-1359.https://doi.org/10.1016/j.compedu.2011.12.013 
-
-Shulman, L. S. (1986). Those who understand: Knowledge growth in teaching. *American Education Research Association*, 15, 4–14. https://doi.org/10.1017/CBO9781107415324.004 
-
-Voogt, J.; Fisser, P.; Roblin, N. Pareja; Tondeur, J.; van Braak, J. (2013): Technological pedagogical content knowledge - a review of the literature. *Journal of Computer Assisted Learning* 29 (2), S. 109-121. DOI: 10.1111/j.1365-2729.2012.00487.x 
-
-Willermark, Sara (2018): Technological Pedagogical and Content Knowledge: A Review of Empirical Studies Published From 2011 to 2016. *Journal of Educational Computing Research* 56 (3), S. 315–343. DOI: 10.1177/0735633117713114. 
 
 
 
@@ -564,11 +548,11 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-**RQ1a)** How is teachers’ technological-pedagogical content knowledge (TPACK) conceptualized within research? What different components are defined and on which component does the focus lie (T, P, C, TP, TC, TP, PC, TPC?)  
+**RQ1)** How is teachers’ technological-pedagogical content knowledge (TPACK) conceptualized within research? What different components are defined and on which component does the focus lie (T, P, C, TP, TC, TP, PC, TPC)? 
 
-**RQ1b)** In particular, how much emphasisze is given on content-related features in data-driven studies as well as in theoretical contributions to the TPACK corpus that use the TPACK model as their guiding framework?
+**RQ1a)** What kind of test instruments have been used to measure TPCK in empirical studies and in which ways to the differ in their application? 
 
-**RQ2)** How do the several existing TPACK measurement instruments mirror the distinct conceptualizations of TPACK? 
+**RQ2)** How do the several existing TPCK measurement instruments mirror the distinct conceptualizations of TPCK? 
 
 
 
@@ -610,7 +594,29 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+### Inclusion criteria
+
+
+* Papers that investigate teachers’ professional knowledge for technology-enhanced teaching based on the TPACK framework by Mishra & Koehler  (2006) or extensions thereof
+
+* Theoretical contributions that conceptualize TPACK (or adoptions thereof)
+
+* Empirical studies that assess TPACK of teachers (either pre-service, trainee or in-service teachers, principals or teacher educators)
+
+* Peer-reviewed journal articles, conference proceedings, book chapters and dissertations
+
+
+### Exclusion criteria
+ 
+
+* No fulltext available
+
+* Papers that are not written in English
+
+* Papers in which TPCK (or adaptions thereof) was not explicitly mentioned in the title or abstract
+
+* Papers from which no clear conceptualization of TPCK can be made out (in the sense of RQ 2, see 2.2)
+
 
 ## Sources of Search: List and Rationale
 
@@ -649,26 +655,16 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-### Inclusion criteria
+* data bases:
+  - Web of Science
+  - PsychINFO
+  - ERiC
+  - ScienceDirect
+  - ProQuest Dissertations
+  - first 100 results from google scholar
+* backwards search
+  - After screening abstracts and titles: We use the three latest reviews on TPACK (or adaptions thereof) and screen their references
 
-
-* Papers that investigate teachers’ professional knowledge for technology-enhanced teaching based on the TPACK framework by Mishra & Koehler  (2006) or extensions thereof
-
-* Theoretical contributions that conceptualize TPACK (or adoptions thereof)
-
-* Empirical studies that assess TPACK of teachers (either pre-service, trainee or in-service teachers, principals or teacher educators)
-
-* Peer-reviewed journal articles, conference proceedings, book chapters and dissertations
-
-
-### Exclusion criteria
- 
-
-* No fulltext available
-
-* Papers that are not written in English
-
-* Papers in which TPCK (or adaptions thereof) was not explicitly mentioned in the title or abstract
 
 ## Search Strategy
 
@@ -697,9 +693,14 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+**Search String**
 
+((TPACK OR TPCK  OR “technological pedagogical content knowledge”  OR “technological-pedagogical-content-knowledge"  OR "technological pedagogical and content knowledge")  AND teacher*)
 
+**Additional Specifications use**
+
+* language: English
+* time span: 2015-2020
 
 ## Data Management Tools Used
 
@@ -728,8 +729,9 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
 
+* Rayyan (https://rayyan.qcri.org/)
+* Citavi (https://www.citavi.com/de)
 
 
 ## Data Extraction (Selection of Studies)
@@ -762,7 +764,14 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+Two independent reviewers conduct every of the following steps:
+
+  1)	screening titles and if we cannot make a statement based on the title we will screen the abstract
+  2)	screening all abstracts
+  3)	screening full texts
+
+At each of this three steps articles will be selected for inclusion if the inclusion criteria apply and none of the exclusivity criteria apply. If this is not the case articles will be excluded. If it is not clearly wheter articles should be included or excluded these studies will be marked as “maybe” and will be discussed with both reviewer together at the end. Articles will also be discussed together of both of the reviewers if there were disagreements. This disagreements were resolved by screening the full texts using the inclusion criteria.
+
 
 
 ## Method of Extracting Data & Information (from Reports)
@@ -795,7 +804,11 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+* Studies will be coded in Rayyan by two independent raters using the detect duplicates, inclusion/exclusion/maybe and labeling function.
+
+* To extract detailed information on the included studies, a standardized Excel or self-programmed dashboard that produces a relational database will be established and applied by two independent raters.
+
+* All extracted data and information will be analyzed for inter-rater agreement and discrepancies will be discussed (see also 3.5).
 
 
 
@@ -835,7 +848,11 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+* *General information on the publication*, such as publication status, publication year,  authors' names, type of paper (theoretical, empirical, ...)
+* *Specific information on the authors*, such as discipline of the authors (general teacher educators, content specialists, didactical profession, ...)
+* *In the case of empirical studies* : Sample Size, Sample Group (students, pre-service teachers, in-service teachers), country the study was conducted, Gender, subject domain, which kind of TPCK measurement was used (self-report, performance-based, observations,...)
+
+Note: This list might be subject to change as we start with the revision process (see)
 
 
 ## Effect size transformation from individual studies
@@ -866,7 +883,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+not possible as this is a review, not a meta-analysis
 
 
 ## Risk of Bias in Individual Studies
@@ -902,8 +919,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
-
+no issue
 
 # Results
 
@@ -947,7 +963,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-_Put your text here._
+After selecting the sample used for analysis according to the selection process (see 3.5), each paper of the sample will be read carefully and the infomation (as outlined in 3.7)
 
 
 ## Moderators/ Subgroups
