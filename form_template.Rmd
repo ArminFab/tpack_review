@@ -700,7 +700,9 @@ knitr::kable(table_sources) %>%
 **Additional Specifications use**
 
 * language: English
-* time span: 2015-2020
+* time span: 2005-2020
+
+**Note**: In 2005, the TPACK model was first mentioned by Mishra and Koehler. Thus, to offer a complete picture on existing TPCK conceptualizations, all years since 2005 need to be taken into consideration. 
 
 ## Data Management Tools Used
 
@@ -770,7 +772,7 @@ Two independent reviewers conduct every of the following steps:
   2)	screening all abstracts
   3)	screening full texts
 
-At each of this three steps articles will be selected for inclusion if the inclusion criteria apply and none of the exclusivity criteria apply. If this is not the case articles will be excluded. If it is not clearly wheter articles should be included or excluded these studies will be marked as “maybe” and will be discussed with both reviewer together at the end. Articles will also be discussed together of both of the reviewers if there were disagreements. This disagreements were resolved by screening the full texts using the inclusion criteria.
+At each of this three steps articles will be included if the inclusion criteria apply and none of the exclusivity criteria apply. If this is not the case, articles will be excluded. If it is not clear whether articles should be included or excluded, these studies will be labelled as “maybe” and then discussed until consens is reached among the raters. Articles will also be discussed together if there are disagreements. These disagreements will be resolved by discussing the article in detail until consens is reached. If no consens can be reached, another independent reviewer will be brought in for discussion.
 
 
 
@@ -963,104 +965,5 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-After selecting the sample used for analysis according to the selection process (see 3.5), each paper of the sample will be read carefully and the infomation (as outlined in 3.7)
+After selecting the sample used for analysis according to the selection process (see 3.5), each paper of the sample will be read carefully and the infomation (as outlined in 3.7) will be extracted and visualized in a table or diagram. A deeper analysis, that aims at answering the two research questions, will then be conducted for each of the papers from the sample.
 
-
-## Moderators/ Subgroups
-
-<button data-toggle="collapse" data-target="#modarat">show sources</button>
-<div id="modarat" class="collapse">
-
-```{r}
-# avoiding markdown tables because they're not exactly the prettiest flower in the bunch
-# set up the table
-table_sources <- data.frame(source = c("PRISMA-P",     # first column will be always the same
-                                       "PROSPERO", 
-                                       "MARS"),
-                            description = c(# PRISMA-P
-                                            "Describe any proposed additional analyses (such as sensitivity or subgroup analyses, meta-regression)",
-                                            # PROSPERO
-                                            "Analysis of subgroups or subsets: State any planned investigation of ‘subgroups’. Be clear and specific about which type of study or participant will be included in each group or covariate investigated. State the planned analytic approach.",
-                                            # MARS
-                                            "Not specified."))
-
-# produce table
-knitr::kable(table_sources) %>%
-    kable_styling(fixed_thead = T) %>%
-    column_spec(1, bold = T) %>%
-    row_spec(0, background = "#ececec")
-```
-
-</div> 
-
-_Put your text here._
-
-
-
-## Assessment of Publication Bias
-
-<button data-toggle="collapse" data-target="#aopb">show sources</button>
-<div id="aopb" class="collapse">
-
-```{r}
-# avoiding markdown tables because they're not exactly the prettiest flower in the bunch
-# set up the table
-table_sources <- data.frame(source = c("PRISMA-P",     # first column will be always the same
-                                       "PROSPERO", 
-                                       "MARS"),
-                            description = c(# PRISMA-P
-                                            "Specify any planned assessment of meta-bias(es) (such as publication bias across studies, selective reporting within studies)",
-                                            # PROSPERO
-                                            "Not specified.",
-                                            # MARS
-                                            "Describe risk of bias across studies, including
-
-* Statement about whether
-   (a) unpublished studies and unreported data, or 
-   (b) only published data were included in the synthesis and the rationale if only published data were used
-* Assessments of the impact of publication bias (e.g., modeling of data censoring, trim-and-fill analysis)
-* Results of any statistical analyses looking for selective reporting of results within studies"))
-
-# produce table
-knitr::kable(table_sources) %>%
-    kable_styling(fixed_thead = T) %>%
-    column_spec(1, bold = T) %>%
-    row_spec(0, background = "#ececec")
-```
-
-</div> 
-
-_Put your text here._
-
-
-# Discussion
-
-
-## Strength of Evidence
-
-<button data-toggle="collapse" data-target="#stroe">show sources</button>
-<div id="stroe" class="collapse">
-
-```{r}
-# avoiding markdown tables because they're not exactly the prettiest flower in the bunch
-# set up the table
-table_sources <- data.frame(source = c("PRISMA-P",     # first column will be always the same
-                                       "PROSPERO", 
-                                       "MARS"),
-                            description = c(# PRISMA-P
-                                            "Describe how the strength of the body of evidence will be assessed (such as GRADE).",
-                                            # PROSPERO
-                                            "Not specified.",
-                                            # MARS
-                                            "Describe the generalizability (external validity) of conclusions, including • Implications for related populations, intervention variations, dependent (outcome) variables."))
-
-# produce table
-knitr::kable(table_sources) %>%
-    kable_styling(fixed_thead = T) %>%
-    column_spec(1, bold = T) %>%
-    row_spec(0, background = "#ececec")
-```
-
-</div> 
-
-_Put your text here._
