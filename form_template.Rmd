@@ -548,7 +548,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-**RQ1)** How is teachers’ technological-pedagogical content knowledge (TPACK) conceptualized within research? What different components are defined and on which component does the focus lie (T, P, C, TP, TC, TP, PC, TPC)? 
+**RQ1)** How is teachers’ technological-pedagogical content knowledge (TPCK) conceptualized within research? What different components are defined and on which component does the focus lie (T, P, C, TP, TC, TP, PC, TPC)? 
 
 **RQ1a)** What kind of test instruments have been used to measure TPCK in empirical studies and in which ways to the differ in their application? 
 
