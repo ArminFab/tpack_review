@@ -311,9 +311,9 @@ knitr::kable(table_sources) %>%
 </div> 
 
 **Corresponding author**
-Armin Fabian
-University of Tübingen
-https://uni-tuebingen.de/einrichtungen/zentrale-einrichtungen/tuebingen-school-of-education-tuese/personen/mitarbeiterinnen-und-mitarbeiter-qualitaetsoffensive-lehrerbildung-digitalisierung/armin-fabian/
+Armin Fabian,
+University of Tübingen,
+https://uni-tuebingen.de/einrichtungen/zentrale-einrichtungen/tuebingen-school-of-education-tuese/personen/mitarbeiterinnen-und-mitarbeiter-qualitaetsoffensive-lehrerbildung-digitalisierung/armin-fabian/, 
 Brunnenstraße 20, 72074 Tübingen
 
 ## Collaborators
@@ -486,7 +486,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-When it comes to school or education as such, the discussion about the use of digital media has become ubiquitous. However, recent studies indicate that teachers still rarely use digital technologies for educational purposes, and if they do, they rarely integrate them into teaching in a didactically meaningful manner (Farjon, Smits & Voogt, 2019). One of the main boundary conditions of successful technology integration, that researchers have identified, is the professional knowledge of teachers. Accordingly, to use technologies in classrooms purposefully, teachers need specific knowledge that is tailored around the use of digital technologies. One of the most recited and adopted models used to describe such knowledge is the TPACK (**t**echnological, **p**edagogical **a**nd **c**ontent **k**nowledge) model by Mishra and Koehler (2006). The TPACK model captures the idea of bringing together and connecting basic knowledge components (i.e.  knowledge about technology, pedagogy and content) to form a new central form of knowledge – TPCK (technological, pedagogical and content knowledge. In literature, TPCK has evolved to become *the* central focus of researchers when it comes to knowledge regarding technology integration (Kim & Lee, 2018).
+When it comes to school or education as such, the discussion about the use of digital media has become ubiquitous. However, recent studies indicate that teachers still rarely use digital technologies for educational purposes, and if they do, they fail to integrate them into teaching in a didactically meaningful manner (Farjon, Smits & Voogt, 2019). One of the main boundary conditions of successful technology integration, that researchers have identified, is the professional knowledge of teachers. Accordingly, to use technologies in classrooms purposefully, teachers need specific knowledge that is tailored around the use of digital technologies. One of the most recited and adopted models used to describe such knowledge is the TPACK (**t**echnological, **p**edagogical **a**nd **c**ontent **k**nowledge) model by Mishra and Koehler (2006). The TPACK model captures the idea of bringing together and connecting basic knowledge components (i.e.  knowledge about technology, pedagogy and content) to form a new central form of knowledge – TPCK (technological, pedagogical and content knowledge. In literature, TPCK has evolved to become *the* central focus of researchers when it comes to knowledge regarding technology integration (Kim & Lee, 2018).
 
 Ever since the introduction of the TPACK model in 2006, numerous researchers have worked *on* the model trying to clarify its underlying structure (Angeli & Valanides, 2009; Graham, 2011); or *with* the model using it as theoretical background for data driven studies (Angeli et al., 2016; Cavanagh & Koehler, 2013;). Yet, to date the question of what TPCK constitutes remains a source of scholarly debate (Petko, 2020). In the authors’ opinion, this is mainly due to the vast, diverse and often seemingly contradictory conceptualisations of TPCK that exist in the TPACK literature. To provide a comprehensive picture on TPCK, it is therefore necessary to understand and organize the different conceptualizations that researchers introduced when working on or with the TPACK model.
 
@@ -603,7 +603,7 @@ knitr::kable(table_sources) %>%
 
 * Empirical studies that assess TPACK of teachers (either pre-service, trainee or in-service teachers, principals or teacher educators)
 
-* Peer-reviewed journal articles, conference proceedings, book chapters and dissertations
+* Peer-reviewed journal articles, conference proceedings and dissertations
 
 
 ### Exclusion criteria
@@ -772,7 +772,7 @@ Two independent reviewers conduct every of the following steps:
   2)	screening all abstracts
   3)	screening full texts
 
-At each of this three steps articles will be included if the inclusion criteria apply and none of the exclusivity criteria apply. If this is not the case, articles will be excluded. If it is not clear whether articles should be included or excluded, these studies will be labelled as “maybe” and then discussed until consens is reached among the raters. Articles will also be discussed together if there are disagreements. These disagreements will be resolved by discussing the article in detail until consens is reached. If no consens can be reached, another independent reviewer will be brought in for discussion.
+At each of this three steps articles will be included if the inclusion criteria apply and none of the exclusivity criteria apply. If this is not the case, articles will be excluded. If it is not clear whether articles should be included or excluded, these articles will be labelled as “maybe” and then discussed among the raters until consens is reached. Articles will also be discussed together if there are disagreements. These disagreements will be resolved by discussing the article in detaild. If no consens can be reached, another independent reviewer will be brought in for discussion.
 
 
 
@@ -806,7 +806,7 @@ knitr::kable(table_sources) %>%
 
 </div> 
 
-* Studies will be coded in Rayyan by two independent raters using the detect duplicates, inclusion/exclusion/maybe and labeling function.
+* Studies will be coded in Rayyan by two independent raters using the "inclusion", "exclusion" and "maybe" labelling function.
 
 * To extract detailed information on the included studies, a standardized Excel or self-programmed dashboard that produces a relational database will be established and applied by two independent raters.
 
@@ -854,7 +854,7 @@ knitr::kable(table_sources) %>%
 * *Specific information on the authors*, such as discipline of the authors (general teacher educators, content specialists, didactical profession, ...)
 * *In the case of empirical studies* : Sample Size, Sample Group (students, pre-service teachers, in-service teachers), country the study was conducted, Gender, subject domain, which kind of TPCK measurement was used (self-report, performance-based, observations,...)
 
-Note: This list might be subject to change as we start with the revision process (see)
+Note: This list might be subject to change as we start with the revision process.
 
 
 ## Effect size transformation from individual studies
