@@ -967,4 +967,4 @@ After the final selection of the sample from the revision process, a content ana
 
 Our analytical approach can be considered both deductive as well as inductive. It will be deductive in the sense that our starting point for developing the coding scheme will be the TPACK model and the complex interplay of its subdomains. On the other hand, our approach includes inductive characteristics as our coding scheme might be supplemented by further labels extracted from individual contributions as we conduct our sample.
 
-Our dichotomous approach will contribute to a comprehensive understanding of TPACK helping future researchers to theoratically and empirically apply this highly complex framework.
+Our dichotomous approach will contribute to a comprehensive understanding of TPACK helping future researchers to theoretically and empirically apply the complex TPACK framework.

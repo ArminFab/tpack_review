@@ -1,42 +1,49 @@
 \PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
 \PassOptionsToPackage{hyphens}{url}
 %
-\documentclass[]{article}
+\documentclass[
+]{article}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provides euro and other symbols
 \else % if luatex or xelatex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\usepackage{hyperref}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdftitle={A Template for Systematic Reviews and Metaanalyses},
-            pdfborder={0 0 0},
-            breaklinks=true}
+  pdftitle={Conceptualizations of the TPACK Framework},
+  pdfborder={0 0 0},
+  breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
 \usepackage[margin=1in]{geometry}
 \usepackage{longtable,booktabs}
-% Fix footnotes in tables (requires footnote package)
-\IfFileExists{footnote.sty}{\usepackage{footnote}\makesavenoteenv{longtable}}{}
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -49,15 +56,15 @@
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
+\setcounter{secnumdepth}{-2}
 % Redefines (sub)paragraphs to behave more like sections
 \ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
 
 % set default figure placement to htbp
@@ -78,11 +85,10 @@
 \usepackage{threeparttablex}
 \usepackage[normalem]{ulem}
 \usepackage{makecell}
-\usepackage{xcolor}
 
-\title{A Template for Systematic Reviews and Metaanalyses}
-\author{true \and true}
-\date{2020-06-03}
+\title{Conceptualizations of the TPACK Framework}
+\author{true \and true \and true}
+\date{2020-10-26}
 
 \begin{document}
 \maketitle
@@ -129,6 +135,8 @@ changes and reasons for change.}
 show changes
 
 \hypertarget{changes}{}
+\begin{collapse}
+
 \begin{longtable}[]{@{}lll@{}}
 \toprule
 \begin{minipage}[b]{0.15\columnwidth}\raggedright
@@ -190,6 +198,8 @@ This field is purely health/ medicine related.\strut
 \bottomrule
 \end{longtable}
 
+\end{collapse}
+
 \hypertarget{general}{%
 \section{General}\label{general}}
 
@@ -199,25 +209,31 @@ This field is purely health/ medicine related.\strut
 show sources
 
 \hypertarget{wt}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Identify the report as a protocol of a systematic review. If the protocol is for an update of a previous systematic review, identify as such\\
+\textbf{PRISMA-P} & Identify the report as a protocol of a systematic review. If the protocol is for an update of a previous systematic review, identify as such\\
 \hline
 PROSPERO & Give the working title of the review, for example the one used for obtaining funding. Ideally the title should state succinctly the interventions or exposures being reviewed and the associated health or social problems. Where appropriate, the title should use the PI(E)COS structure to contain information on the Participants, Intervention (or Exposure) and Comparison groups, the Outcomes to be measured and Study designs to be included.
 
 For reviews in languages other than English, this field should be used to enter the title in the language of the
-review. This will be displayed together with the English language title.\\
+\textbf{review. This will be displayed together with the English language title.}\\
 \hline
-MARS & Title: State the research question and type of research synthesis (e.g., narrative synthesis, meta-analysis)\\
+\textbf{MARS} & Title: State the research question and type of research synthesis (e.g., narrative synthesis, meta-analysis)\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+Cleaning up the Mess : A Systematic Review on the Diverse
+Conceptualizations of the Technological, Pedagogical and Content
+Knowledge (TPACK) Framework
 
 \hypertarget{type-of-review}{%
 \subsection{Type of Review}\label{type-of-review}}
@@ -225,13 +241,15 @@ MARS & Title: State the research question and type of research synthesis (e.g., 
 show sources
 
 \hypertarget{typeor}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Not specified.\\
+\textbf{PRISMA-P} & Not specified.\\
 \hline
 PROSPERO & Type and method of review: Select the type of review and the review method from the lists below. Select the health area(s) of interest for your review.
 
@@ -241,14 +259,16 @@ PROSPERO & Type and method of review: Select the type of review and the review m
 * Review of reviews
 * Synthesis of qualitative studies
 * Systematic review
-* Other\\
+\textbf{* Other}\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+Systematic Review
 
 \hypertarget{link-to-registration}{%
 \subsection{Link to Registration}\label{link-to-registration}}
@@ -256,22 +276,26 @@ MARS & Not specified.\\
 show sources
 
 \hypertarget{ltr}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & If registered, provide the name of the registry (such as PROSPERO) and registration number.\\
+\textbf{PRISMA-P} & If registered, provide the name of the registry (such as PROSPERO) and registration number.\\
 \hline
-PROSPERO & Not specified.\\
+\textbf{PROSPERO} & Not specified.\\
 \hline
-MARS & Give the place where the synthesis is registered and its registry number, if registered\\
+\textbf{MARS} & Give the place where the synthesis is registered and its registry number, if registered\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+This form is used as registration
 
 \hypertarget{anticipated-start-and-completion-date}{%
 \subsection{Anticipated start and completion
@@ -280,22 +304,28 @@ date}\label{anticipated-start-and-completion-date}}
 show sources
 
 \hypertarget{aasd}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Not specified.\\
+\textbf{PRISMA-P} & Not specified.\\
 \hline
-PROSPERO & Give the date when the systematic review commenced, or is expected to commence. Give the date by which the review is expected to be completed.\\
+\textbf{PROSPERO} & Give the date when the systematic review commenced, or is expected to commence. Give the date by which the review is expected to be completed.\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\textbf{Start}: October 2020
+
+\textbf{Anticipated Completion Date}: July 2021
 
 \hypertarget{stage-of-review}{%
 \subsection{Stage of Review}\label{stage-of-review}}
@@ -303,13 +333,15 @@ MARS & Not specified.\\
 show sources
 
 \hypertarget{sor}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Not specified.\\
+\textbf{PRISMA-P} & Not specified.\\
 \hline
 PROSPERO & Indicate the stage of progress of the review by ticking the relevant Started and Completed boxes. Additional
 information may be added in the free text box provided.
@@ -334,14 +366,31 @@ able to edit it until the record is published.
 | Data analysis | Yes/No | Yes/No
 
 Provide any other relevant information about the stage of the review here (e.g. Funded proposal, protocol not
-yet finalised).\\
+\textbf{yet finalised).}\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+The review has not yet started {[}yes/no{]}: no
+
+\begin{longtable}[]{@{}lcc@{}}
+\toprule
+Review stage & Started & Completed\tabularnewline
+\midrule
+\endhead
+Preliminary searches & Yes & Yes\tabularnewline
+Piloting of the study selection process & No & No\tabularnewline
+Formal screening of search results against eligibility criteria & No &
+No\tabularnewline
+Data extraction & No & No\tabularnewline
+Risk of bias (quality) assessment & No & No\tabularnewline
+Data analysis & No & No\tabularnewline
+\bottomrule
+\end{longtable}
 
 \hypertarget{names-affiliations-contact}{%
 \subsection{Names, Affiliations,
@@ -350,26 +399,44 @@ Contact}\label{names-affiliations-contact}}
 show sources
 
 \hypertarget{nac}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
 PRISMA-P & * Provide name, institutional affiliation, e-mail address of all protocol authors; provide physical mailing address of corresponding author.
-* Describe contributions of protocol authors and identify the guarantor of the review.\\
+\textbf{* Describe contributions of protocol authors and identify the guarantor of the review.}\\
 \hline
 PROSPERO & * Named Contact: The named contact acts as the guarantor for the accuracy of the information presented in the register record.
 * Named contact email: Give the electronic mail address of the named contact.
 * Organisational affiliation of the review: Full title of the organisational affiliations for this review and website address if available. This field may be completed as 'None' if the review is not affiliated to any organisation.
-* Review team members and their organisational affiliations: Give the personal details and the organisational affiliations of each member of the review team. Affiliation refers to groups or organisations to which review team members belong.\\
+\textbf{* Review team members and their organisational affiliations: Give the personal details and the organisational affiliations of each member of the review team. Affiliation refers to groups or organisations to which review team members belong.}\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\textbf{Corresponding author}
+
+\begin{itemize}
+\tightlist
+\item
+  Named contact: Armin Fabian
+\item
+  Named contact email:
+  \href{mailto:armin.fabian@uni-tuebingen.de}{\nolinkurl{armin.fabian@uni-tuebingen.de}}
+\item
+  Named contact ORCID:
+  \href{https://orcid.org/0000-0001-6493-2147}{0000-0001-6493-2147}
+\item
+  Named contac address: Keplerstraße 2, room 157, 72074 Tübingen
+\end{itemize}
 
 \hypertarget{collaborators}{%
 \subsection{Collaborators}\label{collaborators}}
@@ -377,46 +444,72 @@ MARS & Not specified.\\
 show sources
 
 \hypertarget{colla}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Not specified.\\
+\textbf{PRISMA-P} & Not specified.\\
 \hline
-PROSPERO & Collaborators (name \& affilitation) of individuals working on the review, but are not review team member.\\
+\textbf{PROSPERO} & Collaborators (name \& affilitation) of individuals working on the review, but are not review team member.\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
 
-\hypertarget{amendments-to-previous-versions}{%
-\subsection{Amendments to previous
-versions}\label{amendments-to-previous-versions}}
+\begin{itemize}
+\tightlist
+\item
+  Review team members and their organisational affiliations:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Iris Backfisch,
+    \href{mailto:i.backfisch@iwm-tuebingen.de}{\nolinkurl{i.backfisch@iwm-tuebingen.de}},
+    ORCID
+    \href{https://orcid.org/0000-0002-1363-9888}{0000-0002-1363-9888}
+  \item
+    Andreas Lachner,
+    \href{mailto:andreas.lachner@uni-tuebingen.de}{\nolinkurl{andreas.lachner@uni-tuebingen.de}},
+    ORCID
+    \href{https://orcid.org/0000-0001-5866-7164}{0000-0001-5866-7164}
+  \end{itemize}
+\item
+  Apart from the review team members, there will be no (external)
+  collaboration. \#\# Amendments to previous versions
+\end{itemize}
 
 show sources
 
 \hypertarget{atpv}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & If the protocol represents an amendment of a previously completed or published protocol, identify as such and list changes; otherwise, state plan for documenting important protocol amendments.\\
+\textbf{PRISMA-P} & If the protocol represents an amendment of a previously completed or published protocol, identify as such and list changes; otherwise, state plan for documenting important protocol amendments.\\
 \hline
-PROSPERO & Not specified.\\
+\textbf{PROSPERO} & Not specified.\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+Amendments will be published as new version of the document under the
+same DOI (or will point to previous version).
 
 \hypertarget{funding-sources-sponsors-and-their-roles}{%
 \subsection{Funding sources, sponsors and their
@@ -425,25 +518,33 @@ roles}\label{funding-sources-sponsors-and-their-roles}}
 show sources
 
 \hypertarget{fsign}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
 PRISMA-P & * Indicate sources of financial or other support for the review
 * Provide name for the review funder and/or sponsor
-* Describe roles of funder(s), sponsor(s), and/or institution(s), if any, in developing the protocol\\
+\textbf{* Describe roles of funder(s), sponsor(s), and/or institution(s), if any, in developing the protocol}\\
 \hline
-PROSPERO & Funding sources/sponsors: Give details of the individuals, organizations, groups or other legal entities who take responsibility for initiating, managing, sponsoring and/or financing the review. Include any unique identification numbers assigned to the review by the individuals or bodies listed. Grant numbers.\\
+\textbf{PROSPERO} & Funding sources/sponsors: Give details of the individuals, organizations, groups or other legal entities who take responsibility for initiating, managing, sponsoring and/or financing the review. Include any unique identification numbers assigned to the review by the individuals or bodies listed. Grant numbers.\\
 \hline
 MARS & * List all sources of monetary and in-kind funding support
-* State the role of funders in conducting the synthesis and deciding to publish the results, if any\\
+\textbf{* State the role of funders in conducting the synthesis and deciding to publish the results, if any}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+BMBF - This project is part of the ``Qualitätsoffensive Lehrerbildung'',
+a joint initiative of the Federal Government andthe Länder which aims to
+improve the quality of teacher training. The programme is funded by the
+Federal Ministry of Education and Research. The authors are responsible
+for the content of this publication.
 
 \hypertarget{conflict-of-interest}{%
 \subsection{Conflict of Interest}\label{conflict-of-interest}}
@@ -451,22 +552,26 @@ MARS & * List all sources of monetary and in-kind funding support
 show sources
 
 \hypertarget{coi}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Not specified.\\
+\textbf{PRISMA-P} & Not specified.\\
 \hline
-PROSPERO & List any conditions that could lead to actual or perceived undue influence on judgements concerning the main topic investigated in the review.\\
+\textbf{PROSPERO} & List any conditions that could lead to actual or perceived undue influence on judgements concerning the main topic investigated in the review.\\
 \hline
-MARS & Describe possible conflicts of interest, including financial and other nonfinancial interests.\\
+\textbf{MARS} & Describe possible conflicts of interest, including financial and other nonfinancial interests.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+No conflict of interest.
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -477,15 +582,17 @@ MARS & Describe possible conflicts of interest, including financial and other no
 show sources
 
 \hypertarget{ram}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Describe the rationale for the review in the context of what is already known.\\
+\textbf{PRISMA-P} & Describe the rationale for the review in the context of what is already known.\\
 \hline
-PROSPERO & Not specified.\\
+\textbf{PROSPERO} & Not specified.\\
 \hline
 MARS & Problem: State the question or relation(s) under investigation, including
 
@@ -496,12 +603,114 @@ MARS & Problem: State the question or relation(s) under investigation, including
    (a) choice of study designs, 
    (b) the selection and coding of outcomes, 
    (c) the selection and coding potential moderators or mediators of results 
-* Psychometric characteristics of outcome measures and other variables\\
+\textbf{* Psychometric characteristics of outcome measures and other variables}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+When it comes to school or education as such, the discussion about the
+use of digital media has become ubiquitous. However, recent studies
+indicate that teachers still rarely use digital technologies for
+educational purposes, and if they do, they fail to integrate them into
+teaching in a didactically meaningful manner (Farjon, Smits \& Voogt,
+2019). One of the main boundary conditions of successful technology
+integration, that researchers have identified, is the professional
+knowledge of teachers. Accordingly, to use technologies in classrooms
+purposefully, teachers need specific knowledge that is tailored around
+the use of digital technologies. One of the most recited and adopted
+models used to describe such knowledge is the TPACK
+(\textbf{t}echnological, \textbf{p}edagogical \textbf{a}nd
+\textbf{c}ontent \textbf{k}nowledge) model by Mishra and Koehler (2006).
+The TPACK model captures the idea of bringing together and connecting
+basic knowledge components (i.e.~knowledge about technology, pedagogy
+and content) to form a new central form of knowledge -- TPACK
+(technological, pedagogical and content knowledge. In literature, TPACK
+has evolved to become \emph{the} central focus of researchers when it
+comes to knowledge regarding technology integration (Kim \& Lee, 2018).
+
+Ever since the introduction of the TPACK model in 2006, numerous
+researchers have worked \emph{on} the model trying to clarify its
+underlying structure (Angeli \& Valanides, 2009; Graham, 2011); or
+\emph{with} the model using it as theoretical background for data driven
+studies (Angeli et al., 2016; Cavanagh \& Koehler, 2013;). Yet, to date
+the question of what TPACK constitutes remains a source of scholarly
+debate (Petko, 2020). The drive of this debate seems to be mainly due to
+the vast, diverse and often seemingly contradictory conceptualizations
+of TPACK that exist in the TPACK literature. To provide a comprehensive
+picture on TPACK, it is therefore necessary to understand and organize
+the different conceptualizations that researchers introduced when
+working on or with the TPACK model.
+
+Against this background, we conduct a systematic review that attempts to
+clarify and systematize existing conceptualizations within the huge
+corpus of TPACK research. More precisely, we are interested in examining
+if TPACK researchers -- in their endeavours of conceptualizing TPACK --
+have put emphasis on specific TPACK components (i.e., subdomains of
+TPACK: Technological Knowledge, content knowledge, pedagogical
+Knowledge, Pedagogical content knowledge, Technological content
+Kowledge, technologocical pedagagogical knowledge and technological
+pedagogical and content knowledge) while possibly neglecting others. In
+other words, we will examine which foci lenses have been used by
+researchers when dealing with the TPACK model. A particular focus will
+here be on \emph{how} and to \emph{what extent} content-specific
+features of TPACK were accounted for in existing conceptualizations of
+the TPACK model. Moreover, we will systematically look at existing TPACK
+measurement methods used in data driven studies to gain a deeper
+understanding of the empirical applicability of existing TPACK
+conceptualizations.
+
+This systematic review will help to organize and understand different
+existent TPACK conceptualizations in research, and thereby paves the way
+for fruitful applications of this highly complex framework in the
+future.
+
+\textbf{References}
+
+Angeli, C., \& Valanides, N. (2009). Epistemological and methodological
+issues for the conceptualization, development, and assessment of
+ICT-TPCK: Advances in technological pedagogical content knowledge
+(TPCK). \emph{Computers \& Education}, \emph{52}(1), 154--168. doi:
+10.1016/j.compedu.2008.07.006.
+
+Angeli, C.; Voogt, J.; Fluck, A.; Webb, M.; Cox, M.; Malyn-Smith, J.,\&
+Zagani, J. (2016): A K-6 Computational Thinking Curriculum Framework:
+Implication for Teacher Knowledge. In: \emph{Educational Technology \&
+Society}, \emph{19}(3), 47--57.
+
+Cavanagh, Robert F.; Koehler, Matthew J. (2013): A Turn toward
+Specifying Validity Criteria in the Measurement of Technological
+Pedagogical Content Knowledge (TPACK). \emph{Journal of Research on
+Technology in Education}, \emph{46}(2), 129-148 doi:
+\url{https://doi.org/10.1080/15391523.2013.10782616}
+
+Cox, S., \& Graham, CR (2009). Diagramming TPACK in practice: Using an
+elaborated model of the TPACK framework to analyze and depict teacher
+knowledge. \emph{TechTrends: Linking Research \& Practice to Improve
+Learning},\emph{53}(5), 60-69. doi:
+\url{https://doi.org/10.1007/s11528-009-0327-1}
+
+Farjon, D., Smits, A., \& Voogt, J. (2019). Technology integration of
+student teachers explained by attitudes and beliefs, competency, access,
+and experience. \emph{Computers \& Education}, \emph{130}, 81-93. doi:
+\url{https://doi.org/10.1016/j.compedu.2018.11.010}
+
+Kim, S.-W., \& Lee, Y. J. (2018): The Effects of the TPACK-P Educational
+Program on Teachers' TPACK: Programming as a Technological Tool.
+\emph{International Journal of Engineering \& Technology}, \emph{30}(7),
+636--643. doi: \url{https://www.doi.org/10.14419/ijet.v7i3.34.19405}
+
+Mishra, P., \& Koehler, M. J. (2006). Technological pedagogical content
+knowledge: A framework for integrating technology in teacher knowledge.
+\emph{Teachers College Record}, \emph{108}(6), 1017-1054. doi:
+\url{https://doi.org/10.1111/j.1467-9620.2006.00684.x}
+
+Petko, D. (2020). Quo vadis TPACK? Scouting the road ahead.
+\emph{Proceedings of EdMedia + Innovate Learning} (pp.~1349-1358).
+Online, The Netherlands: Association for the Advancement of Computing in
+Education (AACE). Retrieved October 10, 2020 from
+\url{https://www.learntechlib.org/primary/p/217445/}.
 
 \hypertarget{research-questions}{%
 \subsection{Research Questions}\label{research-questions}}
@@ -509,25 +718,39 @@ MARS & Problem: State the question or relation(s) under investigation, including
 show sources
 
 \hypertarget{rq}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Provide an explicit statement of the question(s) the review will address with reference to participants, interventions, comparators, and outcomes (PICO)\\
+\textbf{PRISMA-P} & Provide an explicit statement of the question(s) the review will address with reference to participants, interventions, comparators, and outcomes (PICO)\\
 \hline
-PROSPERO & State the question(s) to be addressed by the review, clearly and precisely. Review questions may be specific or broad. It may be appropriate to break very broad questions down into a series of related more specific questions. Questions may be framed or refined using PI(E)COS where relevant.\\
+\textbf{PROSPERO} & State the question(s) to be addressed by the review, clearly and precisely. Review questions may be specific or broad. It may be appropriate to break very broad questions down into a series of related more specific questions. Questions may be framed or refined using PI(E)COS where relevant.\\
 \hline
 MARS & Objectives: State the hypotheses examined, indicating which were prespecified, including
 
 * Question in terms of relevant participant characteristics (including animal populations), independent variables (experimental manipulations, treatments, or interventions), ruling out of possible confounding variables, dependent variables (outcomes, criterion), and other features of study designs
-* Method(s) of synthesis and if meta-analysis was used, the specific methods used to integrate studies (e.g., effect-size metric, averaging method, the model used in homogeneity analysis)\\
+\textbf{* Method(s) of synthesis and if meta-analysis was used, the specific methods used to integrate studies (e.g., effect-size metric, averaging method, the model used in homogeneity analysis)}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\textbf{RQ1)} How is teachers' technological-pedagogical content
+knowledge (TPACK) conceptualized within research? What different
+components are defined and on which component does the focus lie (T, P,
+C, TP, TC, TP, PC, TPC)?
+
+\textbf{RQ2a)} What kind of test instruments have been used to measure
+TPACK in empirical studies and in which ways to the differ in their
+application?
+
+\textbf{RQ2b)} How do the several existing TPACK measurement instruments
+mirror the distinct conceptualizations of TPACK?
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
@@ -539,15 +762,17 @@ Criteria}\label{eligibility-inclusion-and-exclusion-criteria}}
 show sources
 
 \hypertarget{eiaec}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Specify the study characteristics (such as PICO, study design, setting, time frame) and report characteristics (such as years considered, language, publication status) to be used as criteria for eligibility for the review\\
+\textbf{PRISMA-P} & Specify the study characteristics (such as PICO, study design, setting, time frame) and report characteristics (such as years considered, language, publication status) to be used as criteria for eligibility for the review\\
 \hline
-PROSPERO & Give details of the types of study (study designs) eligible for inclusion in the review. If there are no restrictions on the types of study design eligible for inclusion, or certain study types are excluded, this should be stated. The preferred format includes details of both inclusion and exclusion criteria.\\
+\textbf{PROSPERO} & Give details of the types of study (study designs) eligible for inclusion in the review. If there are no restrictions on the types of study design eligible for inclusion, or certain study types are excluded, this should be stated. The preferred format includes details of both inclusion and exclusion criteria.\\
 \hline
 MARS & Describe the criteria for selecting studies, including
 
@@ -557,12 +782,48 @@ MARS & Describe the criteria for selecting studies, including
 * Handling of multiple reports about the same study or sample, describing which are primary and handling of multiple measures using the same participants
 * Restrictions on study inclusion (e.g., by study age, language, location, or report type)
 * Changes to the prespecified inclusion and exclusion criteria, and when these changes were made
-* Handling of reports that did not contain sufficient information to judge eligibility (e.g., lacking information about study design) and reports that did not include sufficient information for analysis (e.g., did not report numerical data about those outcomes)\\
+\textbf{* Handling of reports that did not contain sufficient information to judge eligibility (e.g., lacking information about study design) and reports that did not include sufficient information for analysis (e.g., did not report numerical data about those outcomes)}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\hypertarget{inclusion-criteria}{%
+\subsubsection{Inclusion criteria}\label{inclusion-criteria}}
+
+\begin{itemize}
+\item
+  Papers that investigate teachers' professional knowledge for
+  technology-enhanced teaching based on the TPACK framework by Mishra \&
+  Koehler (2006) or adoptions and extensions thereof
+\item
+  Theoretical contributions that conceptualize TPACK (or adoptions and
+  extensions thereof)
+\item
+  Empirical studies that assess TPACK of instructiors such as
+  (pre-service/in-service) teachers across all levels, university
+  professors, tutors etc.
+\item
+  Peer-reviewed journal articles, conference proceedings and
+  dissertations
+\end{itemize}
+
+\hypertarget{exclusion-criteria}{%
+\subsubsection{Exclusion criteria}\label{exclusion-criteria}}
+
+\begin{itemize}
+\item
+  No fulltext available
+\item
+  Papers that are not written in English
+\item
+  Papers in which TPACK (or adoptions and extensions thereof) was not
+  explicitly mentioned in the title or abstract
+\item
+  Papers from which no clear conceptualization of TPACK can be made out
+  (in the sense of RQ 2, see 2.2)
+\end{itemize}
 
 \hypertarget{sources-of-search-list-and-rationale}{%
 \subsection{Sources of Search: List and
@@ -571,16 +832,18 @@ Rationale}\label{sources-of-search-list-and-rationale}}
 show sources
 
 \hypertarget{soslar}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Not specified.\\
+\textbf{PRISMA-P} & Not specified.\\
 \hline
 PROSPERO & Searches: State the sources that will be searched. Give the search dates, and any restrictions (e.g. language or
-publication period). Do NOT enter the full search strategy (it may be provided as a link or attachment.)\\
+\textbf{publication period). Do NOT enter the full search strategy (it may be provided as a link or attachment.)}\\
 \hline
 MARS & Describe all information sources:
 
@@ -591,12 +854,43 @@ syntheses)
 * Documents for which forward (citation) searches were conducted, stating why these documents were chosen
 * Number of researchers contacted if study authors or individual researchers were contacted to find studies or to obtain more information about included studies, as well as criteria for making contact (e.g., previous relevant publications), and response rate
 * Dates of contact if other direct contact searches were conducted such as contacting corporate sponsors or mailings to distribution lists
-* Search strategies in addition to those above and the results of these searches\\
+\textbf{* Search strategies in addition to those above and the results of these searches}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\begin{itemize}
+\tightlist
+\item
+  data bases:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Web of Science
+  \item
+    PsychINFO
+  \item
+    ERiC
+  \item
+    ScienceDirect
+  \item
+    ProQuest Dissertations
+  \item
+    first 100 results from google scholar
+  \end{itemize}
+\item
+  backwards search
+
+  \begin{itemize}
+  \tightlist
+  \item
+    After screening abstracts and titles: We use the three latest
+    reviews on TPACK (or adoptions thereof) and screen their references
+  \end{itemize}
+\end{itemize}
 
 \hypertarget{search-strategy}{%
 \subsection{Search Strategy}\label{search-strategy}}
@@ -604,22 +898,45 @@ syntheses)
 show sources
 
 \hypertarget{searchs}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Present draft of search strategy to be used for at least one electronic database, including planned limits, such that it could be repeated.\\
+\textbf{PRISMA-P} & Present draft of search strategy to be used for at least one electronic database, including planned limits, such that it could be repeated.\\
 \hline
-PROSPERO & URL to search strategy: Give a link to a published pdf/word document detailing either the search strategy or an example of a search strategy for a specific database if available (including the keywords that will be used in the search strategies), or upload your search strategy. Do NOT provide links to your search results. Alternatively, upload your search strategy to CRD in pdf format. Please note that by doing so you are consenting to the file being made publicly accessible.\\
+\textbf{PROSPERO} & URL to search strategy: Give a link to a published pdf/word document detailing either the search strategy or an example of a search strategy for a specific database if available (including the keywords that will be used in the search strategies), or upload your search strategy. Do NOT provide links to your search results. Alternatively, upload your search strategy to CRD in pdf format. Please note that by doing so you are consenting to the file being made publicly accessible.\\
 \hline
-MARS & Describe all information sources: Search strategies of electronic searches, such that they could be repeated (e.g., include the search terms used, Boolean connectors, fields searched, explosion of terms).\\
+\textbf{MARS} & Describe all information sources: Search strategies of electronic searches, such that they could be repeated (e.g., include the search terms used, Boolean connectors, fields searched, explosion of terms).\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\textbf{Search String}
+
+((TPACK OR TPACK OR ``technological pedagogical content knowledge'' OR
+``technological-pedagogical-content-knowledge'' OR ``technological
+pedagogical and content knowledge'') AND teacher*)
+
+\textbf{Additional Specifications Used}
+
+\begin{itemize}
+\tightlist
+\item
+  language: English
+\item
+  time span: 2005-2020
+\end{itemize}
+
+\textbf{Note}: In 2005, the acrononym TPACK was first used by Mishra and
+Koehler. Thus, to offer a complete picture on existing TPACK
+conceptualizations, all TPACK contributions that have been published
+since 2005 are taken into consideration.
 
 \hypertarget{data-management-tools-used}{%
 \subsection{Data Management Tools
@@ -628,22 +945,32 @@ Used}\label{data-management-tools-used}}
 show sources
 
 \hypertarget{dmtu}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Describe the mechanism(s) that will be used to manage records and data throughout the review.\\
+\textbf{PRISMA-P} & Describe the mechanism(s) that will be used to manage records and data throughout the review.\\
 \hline
-PROSPERO & Not specified.\\
+\textbf{PROSPERO} & Not specified.\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\begin{itemize}
+\tightlist
+\item
+  Rayyan (\url{https://rayyan.qcri.org/})
+\item
+  Citavi (\url{https://www.citavi.com/de})
+\end{itemize}
 
 \hypertarget{data-extraction-selection-of-studies}{%
 \subsection{Data Extraction (Selection of
@@ -652,25 +979,50 @@ Studies)}\label{data-extraction-selection-of-studies}}
 show sources
 
 \hypertarget{desos}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & State the process that will be used for selecting studies (such as two independent reviewers) through each phase of the review (that is, screening, eligibility and inclusion in meta-analysis).\\
+\textbf{PRISMA-P} & State the process that will be used for selecting studies (such as two independent reviewers) through each phase of the review (that is, screening, eligibility and inclusion in meta-analysis).\\
 \hline
-PROSPERO & Data extraction (selection and coding): Describe how studies will be selected for inclusion. State what data will be extracted or obtained. State how this will be done and recorded.\\
+\textbf{PROSPERO} & Data extraction (selection and coding): Describe how studies will be selected for inclusion. State what data will be extracted or obtained. State how this will be done and recorded.\\
 \hline
 MARS & Describe the process for deciding which studies would be included in the syntheses and/or included in the meta-analysis, including
 
 * Document elements (e.g., title, abstract, full text) used to make decisions about inclusion or exclusion from the synthesis at each step of the screening process 
-* Qualifications (e.g., training, educational or professional status) of those who conducted each step in the study selection process, stating whether each step was conducted by a single person or in duplicate as well as an explanation of how reliability was assessed if one screener was used and how disagreements were resolved if multiple were used.\\
+\textbf{* Qualifications (e.g., training, educational or professional status) of those who conducted each step in the study selection process, stating whether each step was conducted by a single person or in duplicate as well as an explanation of how reliability was assessed if one screener was used and how disagreements were resolved if multiple were used.}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+Two independent reviewers conduct every of the following steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  screening titles and if we cannot make a statement based on the title
+  we will screen the abstract
+\item
+  screening all abstracts
+\item
+  screening full texts
+\end{enumerate}
+
+At each of this three steps, articles will be included if the inclusion
+criteria apply and none of the exclusivity criteria apply. If this is
+not the case, articles will be excluded. If it is not clear whether
+articles should be included or excluded, these articles will be labelled
+as ``maybe'' and then discussed among the raters until consens is
+reached. If there are disagreements aomng the raters regarding the
+inclusion or exclusion of a certain publication, this publication will
+be discussed together in more detail until consens is reached.
 
 \hypertarget{method-of-extracting-data-information-from-reports}{%
 \subsection{Method of Extracting Data \& Information (from
@@ -679,25 +1031,41 @@ Reports)}\label{method-of-extracting-data-information-from-reports}}
 show sources
 
 \hypertarget{edfr}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Describe planned method of extracting data from reports (such as piloting forms, done independently, in duplicate), any processes for obtaining and confirming data from investigators.\\
+\textbf{PRISMA-P} & Describe planned method of extracting data from reports (such as piloting forms, done independently, in duplicate), any processes for obtaining and confirming data from investigators.\\
 \hline
-PROSPERO & Not specified.\\
+\textbf{PROSPERO} & Not specified.\\
 \hline
 MARS & Describe methods of extracting data from reports, including 
 
 * Variables for which data were sought and the variable categories 
-* Qualifications of those who conducted each step in the data extraction process, stating whether each step was conducted by a single person or in duplicate and an explanation of how reliability was assessed if one screener was used and how disagreements were resolved if multiple screeners were used as well as whether data coding forms, instructions for completion, and the data (including metadata) are available, stating where they can be found (e.g., public registry, supplemental materials)\\
+\textbf{* Qualifications of those who conducted each step in the data extraction process, stating whether each step was conducted by a single person or in duplicate and an explanation of how reliability was assessed if one screener was used and how disagreements were resolved if multiple screeners were used as well as whether data coding forms, instructions for completion, and the data (including metadata) are available, stating where they can be found (e.g., public registry, supplemental materials)}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\begin{itemize}
+\item
+  Studies will be coded in Rayyan by two independent raters using the
+  ``inclusion'', ``exclusion'' and ``maybe'' labelling function.
+\item
+  To extract detailed information on the included studies, a
+  standardized Excel or self-programmed dashboard that produces a
+  relational database will be established and applied by two independent
+  raters.
+\item
+  All extracted data and information will be analyzed for inter-rater
+  agreement and discrepancies will be discussed (see also 3.5).
+\end{itemize}
 
 \hypertarget{list-and-description-of-data-and-information-extracted}{%
 \subsection{List and Description of Data and Information
@@ -706,14 +1074,16 @@ Extracted}\label{list-and-description-of-data-and-information-extracted}}
 show sources
 
 \hypertarget{ladodaie}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
 PRISMA-P & * List and define all variables for which data will be sought (such as PICO items, funding sources), any pre-planned data assumptions and simplifications
-* List and define all outcomes for which data will be sought, including prioritization of main and additional outcomes, with rationale\\
+\textbf{* List and define all outcomes for which data will be sought, including prioritization of main and additional outcomes, with rationale}\\
 \hline
 PROSPERO & * Condition or domain being studied: Give a short description of the disease, condition or healthcare domain being studied. This could include health and wellbeing outcomes.
 * Participants/population: Give summary criteria for the participants or populations being studied by the review. The preferred format includes details of both inclusion and exclusion criteria.
@@ -721,14 +1091,35 @@ PROSPERO & * Condition or domain being studied: Give a short description of the 
 * Comparator(s)/control: Where relevant, give details of the alternatives against which the main subject/topic of the review will be compared (e.g. another intervention or a non-exposed control group). The preferred format includes details of both inclusion and exclusion criteria.
 * Main and additional outcome(s): Give the pre-specified main (most important) outcomes of the review, including details of how the outcome is defined and measured and when these measurement are made, if these are part of the review inclusion criteria.
 * Measures of effect: Please specify the effect measure(s) for you main outcome(s) e.g. relative risks, odds ratios, risk difference,
-and/or 'number needed to treat.\\
+\textbf{and/or 'number needed to treat.}\\
 \hline
-MARS & Not specified.\\
+\textbf{MARS} & Not specified.\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{General information on the publication}, such as publication
+  status, publication year, authors' names, type of paper (theoretical,
+  empirical, etc)
+\item
+  \emph{Specific information on the authors}, such as discipline of the
+  authors (general teacher educators, content specialists, education
+  professors, etc.)
+\item
+  \emph{In the case of empirical studies} : sample size, sample group
+  (students, pre-service teachers, in-service teachers K-12, etc.),
+  country the study was conducted, gender, subject domain, which kind of
+  TPACK measurement was used (self-report, performance-based,
+  observations, etc.)
+\end{itemize}
+
+\emph{Note}: This list might be subject to extensions and/or adoptions
+as we start with the revision process.
 
 \hypertarget{effect-size-transformation-from-individual-studies}{%
 \subsection{Effect size transformation from individual
@@ -737,23 +1128,27 @@ studies}\label{effect-size-transformation-from-individual-studies}}
 show sources
 
 \hypertarget{estfis}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Not specified.\\
+\textbf{PRISMA-P} & Not specified.\\
 \hline
-PROSPERO & Not specified.\\
+\textbf{PROSPERO} & Not specified.\\
 \hline
 MARS & Describe the statistical methods for calculating effect sizes, including the metric(s) used (e.g., correlation coefficients,
-differences in means, risk ratios) and formula(s) used to calculate effect sizes.\\
+\textbf{differences in means, risk ratios) and formula(s) used to calculate effect sizes.}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+not relevant as this is a review, not a meta-analysis.
 
 \hypertarget{risk-of-bias-in-individual-studies}{%
 \subsection{Risk of Bias in Individual
@@ -762,49 +1157,63 @@ Studies}\label{risk-of-bias-in-individual-studies}}
 show sources
 
 \hypertarget{robiis}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
-PRISMA-P & Describe anticipated methods for assessing risk of bias of individual studies, including whether this will be done at the outcome or study level, or both; state how this information will be used in data synthesis\\
+\textbf{PRISMA-P} & Describe anticipated methods for assessing risk of bias of individual studies, including whether this will be done at the outcome or study level, or both; state how this information will be used in data synthesis\\
 \hline
-PROSPERO & Risk of bias (quality) assessment: Describe the method of assessing risk of bias or quality assessment. State which characteristics of the studies will be assessed and any formal risk of bias tools that will be used.\\
+\textbf{PROSPERO} & Risk of bias (quality) assessment: Describe the method of assessing risk of bias or quality assessment. State which characteristics of the studies will be assessed and any formal risk of bias tools that will be used.\\
 \hline
 MARS & Describe any methods used to assess risk to internal validity in individual study results, including
 
 * Risks assessed and criteria for concluding risk exists or does not exist
-* Methods for including risk to internal validity in the decisions to synthesize of the data and the interpretation of results\\
+\textbf{* Methods for including risk to internal validity in the decisions to synthesize of the data and the interpretation of results}\\
+\hline
+\textbf{Added by authors} & Describe how the quality of original studies are rated. E.g. by 'The Study Design and Implementation Assessment Device (Study DIAD)': https://doi.org/10.1037/1082-989X.13.2.130\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
+
+Through the systematic approach used to obtain our final sample, the
+general quality of included publications should be high. To account for
+individual difficulties and possible bias within publications, a
+qualitative content analysis approach will be conducted for each
+publication individually. By doing so, we can make sure to detect and
+properly reflect upon (empirical) difficulties that we come across in
+individual publications.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
-\hypertarget{strategy-for-data-sythesis}{%
+\hypertarget{strategy-for-data-synthesis}{%
 \subsection{Strategy for Data
-Sythesis}\label{strategy-for-data-sythesis}}
+Synthesis}\label{strategy-for-data-synthesis}}
 
 show sources
 
 \hypertarget{sfds}{}
+\begin{collapse}
+
 \begin{table}[H]
 \centering
-\begin{tabular}{>{\bfseries}l|l}
+\begin{tabular}{>{}l|l}
 \hline
-\rowcolor[HTML]{ececec}  source & description\\
+\cellcolor[HTML]{ececec}{source} & \cellcolor[HTML]{ececec}{description}\\
 \hline
 PRISMA-P & * Describe criteria under which study data will be quantitatively synthesised.
-* If data are appropriate for quantitative synthesis, describe planned summary measures, methods of handling data and methods of combining data from studies, including any planned exploration of consistency (such as I2, Kendall’s τ)
-* If quantitative synthesis is not appropriate, describe the type of summary planned\\
+* If data are appropriate for quantitative synthesis, describe planned summary measures, methods of handling data and methods of combining data from studies, including any planned exploration of consistency (such as I2, Kendall’s t)
+\textbf{* If quantitative synthesis is not appropriate, describe the type of summary planned}\\
 \hline
-PROSPERO & Strategy for data synthesis: Provide details of the planned synthesis including a rationale for the methods selected. This must not be generic text but should be specific to your review and describe how the proposed analysis will be applied to your data.\\
+\textbf{PROSPERO} & Strategy for data synthesis: Provide details of the planned synthesis including a rationale for the methods selected. This must not be generic text but should be specific to your review and describe how the proposed analysis will be applied to your data.\\
 \hline
-MARS & Describe narrative and statistical methods used to compare studies. If meta-analysis was conducted, describe the methods used to combine effects across studies and the model used to estimate the heterogeneity of the effects sizes (e.g., a fixed-effect, random-effects model robust variance estimation), including
+MARS & Describe narrative and statistical methods used to compare studies. If meta-analysis was conducted, describe the methods used to combine effects across studies and the model used to estimate the heterogeneity of the effects sizes(e.g., a fixed-effect, random-effects model robust variance estimation), including
 
 * Rationale for the method of synthesis
 * Methods for weighting study results
@@ -813,90 +1222,30 @@ MARS & Describe narrative and statistical methods used to compare studies. If me
 * Additional analyses (e.g., subgroup analyses, meta-regression), including whether each analysis was prespecified or post hoc
 * Selection of prior distributions and assessment of model fit if Bayesian analyses were conducted
 * Name and version number of computer programs used for the analysis
-* Statistical code and where it can be found (e.g., a supplement)\\
+\textbf{* Statistical code and where it can be found (e.g., a supplement)}\\
 \hline
 \end{tabular}
 \end{table}
 
-\emph{Put your text here.}
+\end{collapse}
 
-\hypertarget{moderators-subgroups}{%
-\subsection{Moderators/ Subgroups}\label{moderators-subgroups}}
+After the final selection of the sample from the revision process, a
+content analysis approach will be conducted (see Mayring, 2014). This
+means, that for each of the selected publication, relevant information
+will be clustered and organized into units of meaning. These units of
+meaning carry information that will help in answering the research
+questions.
 
-show sources
+Our analytical approach can be considered both deductive as well as
+inductive. It will be deductive in the sense that our starting point for
+developing the coding scheme will be the TPACK model and the complex
+interplay of its subdomains. On the other hand, our approach includes
+inductive characteristics as our coding scheme might be supplemented by
+further labels extracted from individual contributions as we conduct our
+sample.
 
-\hypertarget{modarat}{}
-\begin{table}[H]
-\centering
-\begin{tabular}{>{\bfseries}l|l}
-\hline
-\rowcolor[HTML]{ececec}  source & description\\
-\hline
-PRISMA-P & Describe any proposed additional analyses (such as sensitivity or subgroup analyses, meta-regression)\\
-\hline
-PROSPERO & Analysis of subgroups or subsets: State any planned investigation of ‘subgroups’. Be clear and specific about which type of study or participant will be included in each group or covariate investigated. State the planned analytic approach.\\
-\hline
-MARS & Not specified.\\
-\hline
-\end{tabular}
-\end{table}
-
-\emph{Put your text here.}
-
-\hypertarget{assessment-of-publication-bias}{%
-\subsection{Assessment of Publication
-Bias}\label{assessment-of-publication-bias}}
-
-show sources
-
-\hypertarget{aopb}{}
-\begin{table}[H]
-\centering
-\begin{tabular}{>{\bfseries}l|l}
-\hline
-\rowcolor[HTML]{ececec}  source & description\\
-\hline
-PRISMA-P & Specify any planned assessment of meta-bias(es) (such as publication bias across studies, selective reporting within studies)\\
-\hline
-PROSPERO & Not specified.\\
-\hline
-MARS & Describe risk of bias across studies, including
-
-* Statement about whether
-   (a) unpublished studies and unreported data, or 
-   (b) only published data were included in the synthesis and the rationale if only published data were used
-* Assessments of the impact of publication bias (e.g., modeling of data censoring, trim-and-fill analysis)
-* Results of any statistical analyses looking for selective reporting of results within studies\\
-\hline
-\end{tabular}
-\end{table}
-
-\emph{Put your text here.}
-
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
-
-\hypertarget{strength-of-evidence}{%
-\subsection{Strength of Evidence}\label{strength-of-evidence}}
-
-show sources
-
-\hypertarget{stroe}{}
-\begin{table}[H]
-\centering
-\begin{tabular}{>{\bfseries}l|l}
-\hline
-\rowcolor[HTML]{ececec}  source & description\\
-\hline
-PRISMA-P & Describe how the strength of the body of evidence will be assessed (such as GRADE).\\
-\hline
-PROSPERO & Not specified.\\
-\hline
-MARS & Describe the generalizability (external validity) of conclusions, including • Implications for related populations, intervention variations, dependent (outcome) variables.\\
-\hline
-\end{tabular}
-\end{table}
-
-\emph{Put your text here.}
+Our dichotomous approach will contribute to a comprehensive
+understanding of TPACK helping future researchers to theoratically and
+empirically apply the complex TPACK framework.
 
 \end{document}
